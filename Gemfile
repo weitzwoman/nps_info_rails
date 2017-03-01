@@ -18,6 +18,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rest-client'
 gem 'devise'
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
@@ -30,6 +31,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'poltergeist'
   gem 'database_cleaner'
+  gem 'dotenv-rails'
 end
 
 group :development do
