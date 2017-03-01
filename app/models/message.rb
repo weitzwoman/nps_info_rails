@@ -15,11 +15,12 @@ class Message < ApplicationRecord
     end
 
     def get_alerts
-      response = RestClient::Request.execute(
+      response = RestClient::Request.new(
         :method => :get,
         :url => "https://developer.nps.gov/api/v0/alerts?parkCode=yose",
         headers: {:Authorization => ENV['API_KEY']}
-      )
+      ).execute
+      response = JSON.parse(response)
     end
   end
 end

@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @messages = Message.get_new_releases
-    
+    @pre_messages = Message.get_new_releases
+    @messages = @pre_messages['data']
+    @alert_messages = Message.get_alerts
+    @alerts = @alert_messages['data']
   end
 end
