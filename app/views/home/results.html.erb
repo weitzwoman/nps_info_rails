@@ -1,0 +1,21 @@
+<h1>Here are your results:</h1>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <h2>News Releases</h2>
+    <% @messages.each do |mss| %>
+      <h4><%= mss['title'] %></h4>
+      <p><%= mss['abstract'] %></p>
+      <p><%= mss['parkCode'] %></p>
+    <% end %>
+  </div>
+
+  <div class="col-md-6">
+    <h2>Alerts</h2>
+    <% @alerts.each do |a| %>
+      <h4><%= a['title'] %></h4>
+      <p><%= a['description'] %></p>
+      <p><%= a['parkCode'] %></p>
+    <% end %>
+  </div>
+</div>

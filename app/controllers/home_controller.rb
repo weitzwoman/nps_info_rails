@@ -1,10 +1,14 @@
 class HomeController < ApplicationController
   def index
-    @messages = Message.get_new_releases
+    @messages = Message.get_news_releases
     @alerts = Message.get_alerts
+    if params['q']
+      @messages = Message.search_news(params['q'])
+      @alerts = Message.search_alert(params['q'])
+    end
   end
 
-  def show(park_code)
-    @search = Message.search(park_code)
+  def search
+    redirect_to 'home#index'
   end
 end
