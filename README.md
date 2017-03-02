@@ -1,24 +1,57 @@
-# README
+# _NPS News Feed_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Application to search for information on National Parks. Built in Rails using NPS API. 3/1/2017_
 
-Things you may want to cover:
+#### By _**Tracie Weitzman and Kevin Finley**_
 
-* Ruby version
+## Specifications
 
-* System dependencies
+#### 1. Unique Users can login and create profile.
 
-* Configuration
+#### 2. Users can search terms for NPS News Releases and Alerts.
 
-* Database creation
+#### 3. Users can view search results on the home page.
 
-* Database initialization
+## Setup/Installation Requirements
 
-* How to run the test suite
+* _In the Command Line, run:_
+```
+git clone https://github.com/weitzwoman/nps_info_rails
+cd nps_info_rails
+bundle install
+postgres
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+* _In a separate Command Line, run:_
+```
+rails db:setup
+rails s
+```
+* _Then, in any modern browser, open:_
+```
+localhost:3000
+```
 
-* Deployment instructions
+## Support and contact details
 
-* ...
+_Contact us on Github at [weitzwoman](https://github.com/weitzwoman) or [kftwotwo](https://github.com/kftwotwo)_
+
+## Technologies Used
+
+* _Ruby version 2.2.4_
+  * _Rails 5.0.1_
+* _Postgres_
+  * _ActiveRecord_
+* _HTML_
+* _SCSS_
+  * _Bootstrap_
+
+### License
+
+NPS News Feed is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+NPS News Feed is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with the NPS News Feed. If not, see http://www.gnu.org/licenses/.
+
+Copyright (c) 2017 **Tracie Weitzman and Kevin Finley**
